@@ -1,0 +1,83 @@
+.paddingMain{
+  padding: var(--indent) calc(var(--indent) * 2) var(--indent) calc(var(--indent) * 2);
+
+  &--tiny{
+    padding: calc(var(--indent) / 4);
+  }
+
+  &--big {
+    padding: calc(var(--indent) * 2);
+  }
+}
+
+.paddingTop{
+  padding-top: 11px;
+
+  &--padding-top-logo{
+    padding-top: 37px;
+  }
+}
+
+.marginLeft{
+  margin-left: calc(var(--indent) / 2);
+
+  &--origin {
+    margin-left: var(--indent);
+  }
+
+  &--x2 {
+    margin-left: calc(var(--indent) * 2);
+  }
+}
+
+.marginTop{
+  margin-top: calc(var(--indent) / 2);
+
+  &--origin {
+    margin-top: var(--indent);
+  }
+}
+
+.marginRight{
+  margin-right: calc(var(--indent) / 2);
+
+  &--origin {
+    margin-right: var(--indent);
+  }
+}
+
+.flexMain{
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  position: relative;
+
+  &--height-auto {
+    height: auto;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--align-items {
+    align-items: center;
+  }
+
+  &--justify-end {
+    justify-content: flex-end;
+  }
+
+  &--full-center {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+.btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding: 8px 16px;
+  min-width: 64px;
+  min-height: 36px;
+
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+  outline:none;
+
+  &.disabled,
+  &.is-disabled,
+  &[disabled] {
+    cursor: default;
+    background-color: darkgray;
+  }
+  &:hover:not([disabled]) {
+    background-color: darken(white, 10%);
+  }
+
+  &-margin {
+    margin: calc(var(--indent) * 2) calc(var(--indent) / 2);
+  }
+
+  &-accent {
+    background-color: grey;
+  }
+
+  &-accent:hover:not([disabled]) {
+    background-color: darken(grey, 10%);
+  }
+
+  &-link {
+    background-color: transparent;
+    text-transform: none;
+    color: darkgray;
+
+    &:hover:not([disabled]) {
+      background-color: darken(#fff, 10%);
+    }
+  }
+
+  &-link-footer {
+    background-color: transparent;
+    text-decoration: underline;
+    text-transform: none;
+    color: #fff;
+
+    &:hover:not([disabled]) {
+      background-color: transparent;
+      color: darken(#fff, 10%);
+    }
+  }
+}
